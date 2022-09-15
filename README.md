@@ -9,6 +9,8 @@ What's included:
 - Ethers 5
 - Pinia
 - Orbis SDK
+- DaisyUI
+- Tailwind
 
 ## Hosting
 
