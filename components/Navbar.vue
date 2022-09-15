@@ -1,30 +1,17 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <NuxtLink class="navbar-brand" to="/">Punk Starter</NuxtLink>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <div class="d-flex ms-auto" >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-            <li class="nav-item">
-              <NuxtLink class="nav-link active" aria-current="page" to="/">Home page</NuxtLink>
-            </li>
-
-            <li class="nav-item">
-              <NuxtLink class="nav-link" to="/profile">Profile page</NuxtLink>
-            </li>
-
-          </ul>
-        </div>
-      </div>
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <NuxtLink class="btn btn-ghost normal-case text-xl" to="/">Punk Starter</NuxtLink>
     </div>
-  </nav>
+
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <li><NuxtLink class="" to="/">Home page</NuxtLink></li>
+        <li><NuxtLink class="" to="/profile">Profile page</NuxtLink></li>
+      </ul>
+    </div>
+
+  </div>
 </template>
 
 <script>

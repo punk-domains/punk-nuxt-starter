@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   css: [
     'vue-toastification/dist/index.css'
   ],
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
+  },
   define: {
     'process.env': {}
   },
@@ -35,18 +38,19 @@ export default defineNuxtConfig({
   meta: {
     link: [
       { // Bootstrap
-        rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        //rel: "stylesheet",
+        //href: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       }
     ],
     script: [
       {
-        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        //src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       }
     ]
   },
   modules: [
     '@pinia/nuxt',
+    '@nuxtjs/tailwindcss'
   ],
   target: "static"
 })
